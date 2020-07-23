@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#eee6ff"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="Sign in"
+            android:textColor="#000"
+            android:textSize="30dp"></TextView>
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_text"
+            android:layout_marginTop="30dp"
+            android:hint="Username"
+            android:textColor="#000"
+            android:textColorHint="#000">
+        </EditText>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_username"
+            android:layout_marginTop="30dp"
+            android:hint="Password"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:inputType="textPassword">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="login"
+            android:textColor="#fff"
+            android:background="#19004f"
+            android:text="Sign in"></Button>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:onClick="goToRegister"
+            android:textColor="#000"
+            android:text="Not registered? Sign up"
+            android:textSize="16dp"></TextView>
+    </RelativeLayout>
+</LinearLayout>

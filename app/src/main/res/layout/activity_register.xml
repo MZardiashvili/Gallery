@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#eee6ff"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/sign_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="Sign up"
+            android:textColor="#000"
+            android:textSize="30dp"></TextView>
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_text"
+            android:layout_marginTop="30dp"
+            android:hint="Enter username here "
+            android:textColor="#000"
+            android:textColorHint="#000">
+        </EditText>
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_username"
+            android:layout_marginTop="30dp"
+            android:hint="Enter password here"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:inputType="textPassword">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="signUp"
+            android:background="#19004f"
+            android:textColor="#fff"
+            android:text="Sign up"></Button>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:onClick="alreadyRegistered"
+            android:textColor="#000"
+            android:text="Already registered? Sign in"
+            android:textSize="16dp"></TextView>
+    </RelativeLayout>
+</LinearLayout>
